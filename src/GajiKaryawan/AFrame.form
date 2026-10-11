@@ -108,10 +108,8 @@
                           <Component id="maleButton" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="femaleButton" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="helikopterButton" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="nameTxt" alignment="0" max="32767" attributes="0"/>
+                      <Component id="nameTxt" alignment="0" pref="205" max="32767" attributes="0"/>
                       <Component id="dateTxt" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -136,7 +134,6 @@
                       <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="maleButton" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="femaleButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="helikopterButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -210,14 +207,6 @@
               <ComponentRef name="genderGroup"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Wanita"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="helikopterButton">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="genderGroup"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Helikopter"/>
           </Properties>
         </Component>
       </SubComponents>
