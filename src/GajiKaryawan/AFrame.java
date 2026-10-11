@@ -41,7 +41,6 @@ public class AFrame extends javax.swing.JFrame {
         dateTxt = new javax.swing.JTextField();
         maleButton = new javax.swing.JRadioButton();
         femaleButton = new javax.swing.JRadioButton();
-        helikopterButton = new javax.swing.JRadioButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -131,9 +130,6 @@ public class AFrame extends javax.swing.JFrame {
         genderGroup.add(femaleButton);
         femaleButton.setText("Wanita");
 
-        genderGroup.add(helikopterButton);
-        helikopterButton.setText("Helikopter");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -151,10 +147,8 @@ public class AFrame extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(maleButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(femaleButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(helikopterButton))
-                    .addComponent(nameTxt)
+                        .addComponent(femaleButton))
+                    .addComponent(nameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
                     .addComponent(dateTxt))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -173,8 +167,7 @@ public class AFrame extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(maleButton)
-                    .addComponent(femaleButton)
-                    .addComponent(helikopterButton))
+                    .addComponent(femaleButton))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -436,7 +429,7 @@ public class AFrame extends javax.swing.JFrame {
                     null,"Nama atau Kode Belum Diisi", "Kesalahan Berpikir", JOptionPane.ERROR_MESSAGE);
         } else if(maleButton.isSelected()== false 
                 && femaleButton.isSelected()== false 
-                && helikopterButton.isSelected()== false){
+                ){
             JOptionPane.showMessageDialog(
                     null, "Jenis Kelamin belum Dipilih", "Kesalahan Berpikir", JOptionPane.ERROR_MESSAGE
             );
@@ -484,7 +477,7 @@ public class AFrame extends javax.swing.JFrame {
                gender = "Wanita";
                
            }else {
-               gender = "Helikopter";
+               gender = "Tidak tepat";
            }
            
            outputTxt.setText("Kode Karyawan\t: " + kodeTxt.getText() + "\nName \t: "
@@ -548,7 +541,6 @@ public class AFrame extends javax.swing.JFrame {
     private javax.swing.JTextField dateTxt;
     private javax.swing.JRadioButton femaleButton;
     private javax.swing.ButtonGroup genderGroup;
-    private javax.swing.JRadioButton helikopterButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
